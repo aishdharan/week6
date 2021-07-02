@@ -16,13 +16,14 @@ def main():
         new_l.append(j)
     print(new_l)
     print(len(new_l))
+
     # Adjoint pair sum
     new_l1 = [(l[k] + l[k + 1]) for k in range(0, len(l) - 1)]
     print(new_l1)
 
-
-
-
+    # sum of three alternate values
+    new_l2 = [(l[m] + l[m + 2] + l[m + 4]) for m in range(0, len(l)-4)]
+    print(new_l2)
 
     # print(l1[1::1])
 
