@@ -5,8 +5,8 @@ import random
 
 def main():
     l = random.choices(range(0, 101), k=100)
-    print(l)
-    print(len(l))
+    print(f"l = {l}")
+    # print(len(l))
     new_l = list()
     # print(new_l)
     j = 0
@@ -14,16 +14,16 @@ def main():
     for i in l:
         j += i
         new_l.append(j)
-    print(new_l)
-    print(len(new_l))
+    print(f"new_l = {new_l}")
+    # print(len(new_l))
 
     # adjoin pair sum
     new_l1 = [(l[k] + l[k + 1]) for k in range(0, len(l) - 1)]
-    print(new_l1)
+    print(f"new_l1 = {new_l1}")
 
     # sum of three alternate values
     new_l2 = [(l[m] + l[m + 2] + l[m + 4]) for m in range(0, len(l) - 4)]
-    print(new_l2)
+    print(f"new_l2 = {new_l2}")
 
     # print(l1[1::1])
 
