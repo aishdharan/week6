@@ -60,6 +60,8 @@ def main():
         translt_protein += rna_codon[trans_seq_join[i:i + 3]]
     print(f"Translated Protein = {translt_protein}")
 
+    return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
