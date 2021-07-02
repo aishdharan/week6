@@ -6,14 +6,14 @@ def main():
     bases = ['A', 'T', 'G', 'C']
     seq = random.choices(bases, k=100)
     dna_seq = ''.join(seq)
-    print(dna_seq)
+    print(f"DNA sequence = {dna_seq}")
     rna_seq = ""
     for i in dna_seq:
         if i == 'T':
             rna_seq += 'U'
         else:
             rna_seq += i
-    print(rna_seq)
+    print(f"RNA sequence = {rna_seq}")
     trans_seq = []
     for k in rna_seq:
         if k == "A":
@@ -27,7 +27,7 @@ def main():
 
     #print(trans_seq)
     trans_seq_join = ''.join(trans_seq)
-    print(trans_seq_join)
+    print(f"Transcribed sequence = {trans_seq_join}")
     #  if 'T' in dna_seq:
     #      rna_seq = dna_seq.replace('T', 'A')
     #  if 'C' in dna_seq:
