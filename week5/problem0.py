@@ -1,5 +1,16 @@
-import sys
 import random
+import sys
+
+"""
+Notes:
+- Great job for part (a)
+- In part (b) and (c) you have used a relatively complex construct, which to me
+either implies that you know far more than I thought or you got some help
+from Google. Could you please rewrite them using a simple for loop?
+My goal is to know that you know and using a list comprehension while you
+struggle with earlier material makes it hard to for me to gauge your
+true learning. I hope that makes sense.
+"""
 
 
 def main():
@@ -17,10 +28,16 @@ def main():
     # print(len(new_l))
 
     # adjoin pair sum
+    # todo: simplify
+    #  I'm not interested in the final result; I want to see that you understand
+    #  what you are doing. This list comprehension suggest to me that you have an
+    #  alternate source (usually Google), which might make you get by in the
+    #  short run but which will ultimately mislead you.
     new_l1 = [(l[k] + l[k + 1]) for k in range(0, len(l) - 1)]
     print(f"new_l1 = {new_l1}")
 
     # sum of three alternate values
+    # todo: simplify
     new_l2 = [(l[m] + l[m + 2] + l[m + 4]) for m in range(0, len(l) - 4)]
     print(f"new_l2 = {new_l2}")
 
