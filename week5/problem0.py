@@ -16,9 +16,8 @@ true learning. I hope that makes sense.
 def main():
     l = random.choices(range(0, 101), k=100)
     print(f"l = {l}")
-    # print(len(l))
+    print(len(l))
     new_l = list()
-    # print(new_l)
     j = 0
     # cumulative sum
     for i in l:
@@ -33,12 +32,33 @@ def main():
     #  what you are doing. This list comprehension suggest to me that you have an
     #  alternate source (usually Google), which might make you get by in the
     #  short run but which will ultimately mislead you.
-    new_l1 = [(l[k] + l[k + 1]) for k in range(0, len(l) - 1)]
+    new_l1 = []
+    k_list = []
+    a = len(l) - 1
+    print(a)
+    for k in range(0, a):
+        k_list.append(k)
+        # new_l1.append(l[k])
+        # new_l1.append(l[k + 1])
+        new_l1.append(l[k] + l[k + 1])
+    print(f"k_list= {k_list}")
     print(f"new_l1 = {new_l1}")
 
     # sum of three alternate values
     # todo: simplify
-    new_l2 = [(l[m] + l[m + 2] + l[m + 4]) for m in range(0, len(l) - 4)]
+    new_l2 = []
+    m_list = []
+    b = len(l) - 4
+    print(b)
+    for m in range(0, b):
+        m_list.append(m)
+        # new_l2.append(l[m])
+        # new_l2.append(l[m + 2])
+        # new_l2.append(l[m + 4])
+        # new_l2.append(l[m] + l[m + 2])
+        # new_l2.append(l[m] + l[m + 4])
+        new_l2.append(l[m] + l[m + 2] + l[m + 4])
+    print(f"m_list= {m_list}")
     print(f"new_l2 = {new_l2}")
 
     # print(l1[1::1])
