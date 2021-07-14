@@ -1,7 +1,13 @@
 import sys
 
+"""
+Notes:
+- Excellent job! You're the only one to have bypassed the builtin min() and max() functions!
+"""
+
 
 def max_min(list1):
+    # todo: add a docstring; see class notes on how to do this
     max1 = list1[0]
     min2 = list1[0]
     for num in list1:

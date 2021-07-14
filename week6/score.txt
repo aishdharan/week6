@@ -1,0 +1,12 @@
+problem/score
+0/- # attempt again
+1/9 # pending amendments for full score (paffs)
+2/9 # paffs
+3/-
+4/-
+5/-
+6/-
+7/-
+8/-
+9/-
+Total/18
